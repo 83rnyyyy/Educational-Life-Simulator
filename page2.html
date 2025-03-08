@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title id = web-title></title>
+    
+    <style> 
+
+        
+
+        h1, h2 {
+            text-align: center;
+            color: white;
+            font-size: 50px;
+            flex-grow: 1;
+            margin-right: auto;
+            margin-left: auto;
+        }
+
+        h3{
+            color: black;
+        }
+
+        p { 
+            text-align: center;
+            word-break: keep-all;
+            color: black;
+        }
+
+        .textContainer{
+            display: flex;
+            flex-direction: row;
+            font-size: 20px;
+            color: white;
+            margin-top: 50px;
+            text-align: center;
+            
+            justify-content: space-between;
+            background-color: transparent;
+            border-radius: 20px;
+            width: 80%; 
+            max-width: 1200px;
+            margin-left: auto;
+            margin-right: auto;
+
+            
+        }
+
+        .textContainer2{
+            display: flex;
+            flex-direction: column;
+            width: 80ch;
+            border-width: 20px;
+
+        }
+
+        body{
+            background-repeat: no-repeat; 
+            background-size: cover;
+            width: 100%;
+            height: 100%;
+            overflow-x: hidden;
+            overflow-y: auto;
+            
+            background-image: url('https://img.freepik.com/premium-photo/history-class-with-old-teacher-globe-desk-modern-illustration-school-class-interior-with-blackboard-globe-historical-map_76964-265575.jpg');
+        }
+
+        .maps{
+            display:flex;
+            justify-content: space-between;
+            flex-direction: row;
+            margin-top: auto;
+            margin-bottom: auto;
+            
+        }
+
+
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+
+        .container2 {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-evenly;
+        }
+
+        .container img, .container2 img {
+            border-radius: 10px; 
+            border:5px solid white;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+            object-fit: cover;
+            height: 320px;
+            width: 320px;
+            transition: 0.5s;
+        }
+
+
+
+        .container img:hover, .container2 image:hover {
+            width: 340px;
+            
+        }
+
+        .button {
+            padding: 15px 32px;
+            text-align: center;
+            font-size: 20px;
+            cursor: pointer;
+            width: 350px;
+            color: white;
+            background-color: #fbeee0;
+            border: 1px solid white; 
+            text-shadow: 1px 1px 2px white, 0 0 25px rgb(255, 255, 255), 0 0 5px dimgrey;
+            border-radius: 12px;
+        }
+
+        .button:hover {
+            background-color: #b4d0d9;
+        }
+    
+        .button-1 {
+            background-color: #fbeee0;
+            border: 2px solid #422800;
+            border-radius: 30px;
+            box-shadow: #422800 4px 4px 0 0;
+            color: #422800;
+            cursor: pointer;
+            display: inline-block;
+            font-weight: 600;
+            font-size: 18px;
+            padding: 0 18px;
+            line-height: 50px;
+            text-align: center;
+            text-decoration: none;
+            user-select: none;
+            -webkit-user-select: none;
+            touch-action: manipulation;
+            margin-right: 50px;
+        }
+
+        .button-1:hover {
+            background-color: #fff;
+        }
+
+        .button-1:active {
+            box-shadow: #422800 2px 2px 0 0;
+            transform: translate(2px, 2px);
+        }
+
+    
+
+        .title-align{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            flex-grow: 1;
+            position: relative;
+            
+            
+        }
+        .button-container {
+            display: flex;
+            justify-content: flex-end;
+            position: absolute; 
+            margin-left: 20;
+            right: 0;
+        }
+        .button-container2 {
+            display: flex;
+            justify-content: flex-start;
+            position: absolute; 
+            margin-right: 20;
+            left: 0;
+        }
+
+        
+        
+        .page3child{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .title-img-column{
+            display:flex;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        * {box-sizing:border-box}
+
+    
+
+        .container-3 {
+            width: 60%; 
+            background-color: #ddd; 
+            margin-left: auto;
+            margin-right: auto;
+            margin-bottom: 3%;
+            border-radius: 15px;
+            position: relative;
+            overflow: hidden; 
+        }
+
+        .skills {
+            text-align: center;
+            padding-top: 10px;
+            padding-bottom: 10px; 
+            color: white;
+            position: relative;
+            height: 60px;
+        }
+
+        @keyframes liquidFlow {
+            0% {
+                background-position: 0 0;
+            }
+            50% {
+                background-position: 100% 0;
+            }
+            100% {
+                background-position: 0 0;
+            }
+        }
+
+        .html {
+            width: 0%;
+            background-color: #04AA6D; 
+            border-radius: 15px;
+            height: 60px;
+            position: relative;
+            background-image: linear-gradient(45deg, #04AA6D, #00e676, #00c853, #04AA6D);
+            background-size: 200% 200%; 
+            animation: liquidFlow 5s ease-in-out infinite;
+            transition: 2s ease-in-out;
+        }
+
+        #overlay {
+            position: fixed;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            z-index: 2;
+            background-color: rgba(0, 0, 0, 0.5);  
+            cursor: pointer;
+        }
+
+        #text{
+            font-size: 50px;
+    
+        }
+
+        #overlay div {
+            margin-top: 20%;
+            margin: 50px 0; 
+        }
+
+        .overlay-backgrounud {
+            text-align: center;      
+            color: white;
+            display: flex;
+            flex-direction: column; 
+            align-items: center;
+        }
+
+        .button-2 {
+            background-color: #FFFFFF;
+            border: 1px solid #222222;
+            border-radius: 8px;
+            box-sizing: border-box;
+            color: #222222;
+            cursor: pointer;
+            display: inline-block;
+            font-family: "Helvetica Neue",sans-serif;
+            font-size: 16px;
+            font-weight: 600;
+            line-height: 20px;
+            margin: 0;
+            outline: none;
+            padding: 10px 13px;
+            position: relative;
+            text-align: center;
+            text-decoration: none;
+            touch-action: manipulation;
+            transition: box-shadow .2s,-ms-transform .1s,-webkit-transform .1s,transform .1s;
+            user-select: none;
+            -webkit-user-select: none;
+            width: auto;
+        }
+
+        .button-2:focus-visible {
+            box-shadow: #222222 0 0 0 2px, rgba(255, 255, 255, 0.8) 0 0 0 4px;
+            transition: box-shadow .2s;
+        }
+
+        .button-2:active {
+            background-color: #F7F7F7;
+            border-color: #000000;
+            transform: scale(.96);
+        }
+
+        .button-2:disabled {
+            border-color: #DDDDDD;
+            color: #DDDDDD;
+            cursor: not-allowed;
+            opacity: 1;
+        }
+
+        .hover-underline-animation {
+            display: inline-block;
+            position: relative;
+        }
+
+        .hover-underline-animation::after {
+            content: '';
+            position: absolute;
+            width: 100%;
+            transform: scaleX(0);
+            height: 2px;
+            bottom: 0;
+            left: 0;
+            background-color: #ffffff;
+            transform-origin: bottom right;
+            transition: transform 0.25s ease-out;
+        }
+
+        .hover-underline-animation:hover::after {
+            transform: scaleX(1);
+            transform-origin: bottom left;
+        }
+
+      
+    </style>
+</head>
+<body onload="start();" id="body">
+    
+    <div class="title-align">
+        <div class="button-container2" onclick="on()">
+            <button class="button-2" type="button" id="back-button"> ☰ </button>
+        </div>
+        <h1 id="title">Career Trends</h1>
+        <div class="button-container">
+            <button class="button-1" type="button"  id="next-button" disabled="true" onclick="nextPage();">Next</button>
+        </div>
+    </div>
+    
+
+    <div id="overlay" onclick="off()" style="display: none;">
+        <div class="overlay-backgrounud">
+            <div class="hover-underline-animation" id="text" onclick="returnPage1();">Home</div>
+            <div class="hover-underline-animation" id="text">Back</div>
+        </div>
+    </div>
+
+
+    <div class="container-3">
+        <div class="skills html content" id="xp">
+        </div>
+    </div>
+
+   
+    </div>
+
+    <div class="page3child">
+        <img src="download-removebg-preview.png" width="300x", height="300px" hidden="true" id="page3-child"/>
+    </div>
+
+    <div class="page3child">
+        <img src="pngtree-cartoon-teenager-walking-with-a-bag-png-image_4024271-removebg-preview.png" width="300x", height="300px" hidden="true" id="page4-adult" />
+    </div>
+
+    <div class="container2">
+        
+        <div class="container" onclick="img1Disc();">
+            <img src="https://media.istockphoto.com/id/950485392/vector/greater-toronto-area-administrative-and-political-map.jpg?s=612x612&w=0&k=20&c=Wtf-juc8OmT2TiY7lCin3ogNsTZI8LiD10LNcISy0Mk=" id="img1"/>
+            <br><button class="button" id="img1-button"></button>
+        </div>
+
+        <div class="container"  onclick="img2Disc();">
+                <img src="https://www.map-of-canada.org/map-of-canada-724.jpg" id="img2" />
+                <br><button class="button" id="img2-button"></button>
+        </div>
+
+        <div class="container" onclick="img3Disc();">
+            <img src="https://www.worldometers.info/world-map/world-map-pro.jpg" id="img3" />
+            <br><button class="button" id="img3-button"></button>
+        </div>
+    </div>
+
+
+    <div class="textContainer">
+        <div class="textContainer2">
+            <h3 id="text1-title" hidden="true"></h3>
+            <p id="text1"></p>
+        </div>
+
+        <div class="textContainer2">
+            <h3 id="text2-title" hidden="true"></h3>
+            <p id="text2"></p>
+        </div>
+
+        <div class="textContainer2">
+            <h3 id="text3-title" hidden="true"></h3>
+            <p id="text3"></p>
+        </div>
+    </div>
+
+
+
+    <script src="page2script.js"> </script>
+</body>
+
+</html>

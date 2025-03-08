@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>Experiential Learning</title>
+
+
+    <style>
+        h1, h2 {
+            text-align: center;
+            color: white;
+            font-size: 50px;
+            flex-grow: 1;
+            margin-right: auto;
+            margin-left: auto;
+        }
+
+        p { 
+            text-align: center;
+            word-break: keep-all;
+        }
+
+        .textContainer{
+            display: flex;
+            flex-direction: row;
+            font-size: 20px;
+            color: white;
+            margin-top: 50px;
+            text-align: center;
+            
+            justify-content: space-between;
+            background-color: transparent;
+            border-radius: 20px;
+            width: 80%; 
+            max-width: 1200px;
+            margin-left: auto;
+            margin-right: auto;
+
+            
+        }
+
+        .textContainer2{
+            display: flex;
+            flex-direction: column;
+            width: 80ch;
+
+        }
+
+        body{
+            background-repeat: no-repeat; 
+            background-size: cover;
+            width: 100%;
+            height: 100%;
+            overflow-x: hidden;
+            overflow-y: auto;
+            
+            background-image: url("https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/f5194750-4c8e-47fa-91d6-c9804892c521/de2v5p8-992aa874-b0c0-4942-8b65-2cb97df4099a.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcL2Y1MTk0NzUwLTRjOGUtNDdmYS05MWQ2LWM5ODA0ODkyYzUyMVwvZGUydjVwOC05OTJhYTg3NC1iMGMwLTQ5NDItOGI2NS0yY2I5N2RmNDA5OWEuanBnIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.owPYlfnrd_5HDFvFj0IUVxraGVErQDi72-H8okOHqhU")
+        }
+
+        .maps{
+            display:flex;
+            justify-content: space-between;
+            flex-direction: row;
+            margin-top: auto;
+            margin-bottom: auto;
+            
+        }
+
+
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            text-align: center;
+        }
+
+        .container2 {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            margin-top: 50px;
+        }
+
+        .container img, .container2 img {
+            border-radius: 10px; 
+            border:5px solid white;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+            object-fit: cover;
+            height: 320px;
+            width: 320px;
+            transition: 0.5s;
+        }
+
+
+
+        .container img:hover, .container2 image:hover {
+            width: 340px;
+            
+        }
+
+        .button {
+            padding: 15px 32px;
+            text-align: center;
+            font-size: 20px;
+            cursor: pointer;
+            width: 350px;
+            color: white;
+            background-color: darkgray;
+            border: 1px solid white; 
+            text-shadow: 1px 1px 2px white, 0 0 25px rgb(255, 255, 255), 0 0 5px dimgrey;
+            border-radius: 12px;
+        }
+
+        .button:hover {
+            background-color: #b4d0d9;
+        }
+
+
+    </style>
+</head>
+
+
+
+<body>
+</head>
+<body onload="start();">
+    
+    <div class="title-align">
+        <h1 id="title"> </h1>
+        <div class="button-container">
+            <button class="button-89" role="button"  id="next-button" disabled="true" onclick="nextPage();">Next</button>
+        </div>
+    </div>
+
+    <p id="xp"> </p>
+
+    
+    <img src="download-removebg-preview.png" width="300x", height="300px" id="page3-child"/>
+
+    <div class="container2">
+        
+        <div class="container" onclick="img1Disc();">
+            <img  id="img1"/>
+            <br><button class="button"> Greater Toronto Area </button>
+        </div>
+
+        <div class="container"  onclick="img2Disc();">
+                <img id="img2" />
+                <br><button class="button">National</button>
+        </div>
+
+        <div class="container" onclick="img3Disc();">
+            <img id="img3" />
+            <br><button class="button">International</button>
+        </div>
+    </div>
+
+
+    <div class="textContainer">
+        <div class="textContainer2">
+            <h3 id="text1-title" hidden="true"></h3>
+            <p id="text1"></p>
+        </div>
+
+        <div class="textContainer2">
+            <h3 id="text2-title" hidden="true"></h3>
+            <p id="text2"></p>
+        </div>
+
+        <div class="textContainer2">
+            <h3 id="text3-title" hidden="true"></h3>
+            <p id="text3"></p>
+        </div>
+    </div>
+
+    <button type="button" hidden="true" id="back-button"> Exit </button>
+
+
+
+    <script src="page2script.js"> </script>
+</body>
+
+</html>
+</body>
+</html>
